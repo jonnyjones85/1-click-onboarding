@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-navy: #0F1028;
+  --color-navy-dark: #01000C;
+  --color-navy-light: #19193A;
+  --color-gold: #FFA900;
+  --color-gold-light: #FFBD59;
+  --color-gold-hover: #e68700;
+  --color-orange-btn: #FF9800;
+  --color-green: #027A15;
+  --color-red: #D20000;
+  --color-red-accent: #CC0000;
+  --color-blue-link: #188BF6;
+  --color-gray-light: #F3F3F3;
+  --color-gray-border: #D6D6D6;
+  --font-sans: var(--font-roboto);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-navy);
+  color: #ffffff;
+  font-family: var(--font-sans), "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes rocking {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-2deg); }
+  20% { transform: rotate(2deg); }
+  30% { transform: rotate(-1deg); }
+  40% { transform: rotate(1deg); }
+  50% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.animate-rocking {
+  animation: rocking 2s infinite cubic-bezier(0, 0, 0.58, 1);
+}
+
+.animate-rocking:hover {
+  animation: none;
 }
