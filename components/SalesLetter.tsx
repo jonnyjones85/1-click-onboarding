@@ -2,7 +2,7 @@ import CTAButton from "./CTAButton";
 
 export default function SalesLetter() {
   return (
-    <section className="mx-auto max-w-3xl px-4 py-12 text-gray-300 leading-relaxed">
+    <section className="mx-auto max-w-3xl px-5 md:px-4 py-12 text-gray-300 leading-relaxed text-base md:text-lg">
       {/* Intro letter */}
       <div className="mb-10 rounded-lg border border-navy-light bg-navy-light/30 p-6 md:p-10">
         <h2 className="mb-6 text-center text-2xl font-bold text-white md:text-3xl">
@@ -15,13 +15,13 @@ export default function SalesLetter() {
         </p>
       </div>
 
-      <p className="mb-2 text-sm text-gold">
+      <p className="mb-2 text-gold">
         Dear Future 1 Click Client Onboarding Install Pack Owner
       </p>
-      <p className="mb-1 text-sm text-gray-400">
+      <p className="mb-1 text-gray-400">
         From: The laptop of Katie Bani
       </p>
-      <p className="mb-6 text-sm text-gray-400">
+      <p className="mb-6 text-gray-400">
         Re: Your Automated Client Onboarding Install Pack (and why this is your
         only way out)
       </p>

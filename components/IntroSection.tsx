@@ -1,6 +1,6 @@
 export default function IntroSection() {
   return (
-    <section className="mx-auto max-w-3xl px-4 py-12 text-gray-300 leading-relaxed">
+    <section className="mx-auto max-w-3xl px-5 md:px-4 py-12 text-gray-300 leading-relaxed text-base md:text-lg">
       <div className="mb-10 rounded-lg border border-gold/30 bg-navy-light/40 p-6 md:p-10 text-center">
         <h2 className="mb-4 text-2xl font-bold text-gold md:text-3xl">
           1 CLICK CLIENT ONBOARDING IS THE ULTIMATE SHORTCUT TO START{" "}
